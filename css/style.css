@@ -609,14 +609,34 @@ body {
   left: 0; }
   .popup__content {
     width: 80%;
-    height: 80%;
     background-color: #ffff;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 3px; }
+    border-radius: 3px;
+    display: table;
+    overflow: hidden; }
+  .popup__left {
+    width: 33.3333333%;
+    display: table-cell;
+    vertical-align: middle; }
+  .popup__right {
+    width: 66.666666%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 5rem; }
+  .popup__img {
+    display: block;
+    width: 100%; }
+  .popup__text {
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid #e7e5e5;
+    hyphens: auto; }
 
 .section-about {
   background-color: #f7f7f7;
